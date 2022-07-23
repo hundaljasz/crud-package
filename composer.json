@@ -10,5 +10,20 @@
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "devjaskirat\\crud\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "devjaskirat\\crud\\CrudServiceProvider"
+            ],
+            "aliases": {
+                "Crud": "devjaskirat\\crud\\CrudServiceProvider" 
+            }
+        }
+    } 
 }
