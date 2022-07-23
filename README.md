@@ -76,7 +76,10 @@ for instance, to store data:-
 
 ```php
     /**
-     * @param  mixed  $request(from user with data),$table(in which table you want to store data),$imageFolder(optional if image is available, where you want to uplaod it),$imageField(image field in the request, in which file is available),$prefix(optional if you want to add a prefix to the image name)
+     * @param  mixed  $request(from user with data),$table(in which table you want to store data)
+     * ,$imageFolder(optional if image is available, where you want to uplaod it)
+     * ,$imageField(image field in the request, in which file is available)
+     * ,$prefix(optional if you want to add a prefix to the image name)
      * @return mixed array will be returned with status, type, last inserted id, and message.
      */
     $this->crud->store($request,$table,$imageFolder,$imageField,$prefix); 
@@ -86,7 +89,11 @@ for instance, to store data:-
 
 ```php
     /**
-     * @param  mixed  $request(from user with data),$id(which record you want to update),$table(in which table you want to update data),$imageFolder(optional if image is available, where you want to uplaod it),$imageField(image field in the request, in which file is available),$prefix(optional if you want to add a prefix to the image name)
+     * @param  mixed  $request(from user with data),$id(which record you want to update)
+     * ,$table(in which table you want to update data)
+     * ,$imageFolder(optional if image is available, where you want to uplaod it)
+     * ,$imageField(image field in the request, in which file is available)
+     * ,$prefix(optional if you want to add a prefix to the image name)
      * @return mixed array will be returned with status, type, id, and message.
      */
     $this->crud->update($request,$id,$table,$imageFolder,$imageField,$prefix);
