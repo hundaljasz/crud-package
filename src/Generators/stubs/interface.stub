@@ -2,7 +2,7 @@
 
 namespace $NAMESPACE$;
 
-use Devjaskirat\CRUD\repository\CrudRepo;
+use Devjaskirat\crud\repository\CrudRepo;
 use App\Models\$MODEL$;
 use Illuminate\Http\Request;
 

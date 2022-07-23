@@ -1,9 +1,9 @@
 <?php
 
-namespace Devjaskirat\CRUD;
+namespace Devjaskirat\crud;
 
 use Illuminate\Support\ServiceProvider;
-use Devjaskirat\CRUD\Generators\CrudCommand;
+use Devjaskirat\crud\Generators\CrudCommand;
 
 class CrudServiceProvider extends ServiceProvider
 {
