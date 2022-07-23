@@ -1,7 +1,7 @@
 <?php
 
-namespace Devjaskirat\crud\repository;
-use Devjaskirat\crud\Models\image;
+namespace devjaskirat\crud\repository;
+use devjaskirat\crud\Models\image;
 use Illuminate\Database\QueryException;
 use Exception;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Devjaskirat\crud;
+namespace devjaskirat\crud;
 
 use Illuminate\Support\ServiceProvider;
-use Devjaskirat\crud\Generators\CrudCommand;
+use devjaskirat\crud\Generators\CrudCommand;
 
 class CrudServiceProvider extends ServiceProvider
 {
@@ -14,7 +14,7 @@ class CrudServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        // $this->app->make('Devjaskirat\CRUD\Http\CalculatorController');
+        // 
     }
 
     /**

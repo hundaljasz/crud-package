@@ -1,6 +1,6 @@
 <?php
 
-namespace Devjaskirat\crud\Models;
+namespace devjaskirat\crud\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

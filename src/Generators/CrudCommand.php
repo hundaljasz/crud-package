@@ -1,6 +1,6 @@
 <?php
 
-namespace Devjaskirat\crud\Generators;
+namespace devjaskirat\crud\Generators;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Pluralizer;
