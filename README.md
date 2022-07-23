@@ -59,7 +59,7 @@ After importing you can import the provider or alias in your controller.
 or 
 
 ```php
-    user CRUD;
+    use CRUD;
 ```
 
 Create the object
