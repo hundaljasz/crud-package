@@ -1,0 +1,14 @@
+{
+    "name": "devjaskirat/crud",
+    "description": "with the help of this package we don't have to worry about to the code for CRUD operations",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "jaskirat",
+            "email": "jaskiratsingh20235@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

@@ -1,0 +1,19 @@
+<?php
+
+namespace $NAMESPACE$;
+
+use Devjaskirat\CRUD\repository\CrudRepo;
+use App\Models\$MODEL$;
+use Illuminate\Http\Request;
+
+class $CLASS_NAME$ extends CrudRepo
+{
+    /**
+     * Validate your request here.
+     *
+     * @return int
+     */
+    public function validate(Request $request) {
+
+    }
+}
