@@ -20,13 +20,21 @@ composer require devjaskirat/crud
 
 ## Steps
 
-import ```php 
-devjaskirat\crud\CrudServiceProvider::class,
-``` in config/app.php under providers 
-or if you wish to make alias 
+import 
 ```php 
-    'CRUD' => devjaskirat\crud\CrudServiceProvider::class,
-```  in config/app.php under aliases.
+    'providers' => [
+        devjaskirat\crud\CrudServiceProvider::class
+        ];
+``` 
+in config/app.php under providers 
+or if you wish to make alias 
+
+```php 
+'aliases' => [
+    'CRUD' => devjaskirat\crud\CrudServiceProvider::class
+    ];
+```  
+in config/app.php under aliases.
 
 after importing provider or alias you are ready to go.
 
