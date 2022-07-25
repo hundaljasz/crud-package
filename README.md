@@ -69,7 +69,7 @@ public function __construct(CrudService $crud){
         $this->crud = $crud;
     }
 ```
-in CRUD Paclage you have basic CRUD functions available to use 
+in CRUD Package you have basic CRUD functions available to use 
 for instance, to store data:-
 
 ## Store
