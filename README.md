@@ -15,7 +15,7 @@ The recommended way to install CRUD Package is through
 ```bash
 composer require briza/manager
 ```
-
+ 
 ## Steps
 
 Import in config/app.php under providers 
