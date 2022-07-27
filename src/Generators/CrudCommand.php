@@ -1,6 +1,6 @@
 <?php
 
-namespace devjaskirat\crud\Generators;
+namespace briza\manager\Generators;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Pluralizer;

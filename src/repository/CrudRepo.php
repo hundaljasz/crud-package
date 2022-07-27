@@ -1,7 +1,7 @@
 <?php
 
-namespace devjaskirat\crud\repository;
-use devjaskirat\crud\Models\image;
+namespace briza\manager\repository;
+use briza\manager\Models\image;
 use Illuminate\Database\QueryException;
 use Exception;
 

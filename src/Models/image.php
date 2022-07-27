@@ -1,6 +1,6 @@
 <?php
 
-namespace devjaskirat\crud\Models;
+namespace briza\manager\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -10,6 +10,6 @@ class image extends Model
     use HasFactory;
 
     protected $fillable = [
-        'image','table','image_id','path'
+        'image','table','related_table_id','path'
     ];
 }

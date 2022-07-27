@@ -1,5 +1,5 @@
 {
-    "name": "devjaskirat/crud",
+    "name": "briza/manager",
     "description": "with the help of this package we don't have to worry about to the code for CRUD operations",
     "type": "library",
     "license": "MIT",
@@ -13,17 +13,14 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "devjaskirat\\crud\\": "src/"
+            "briza\\manager\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "devjaskirat\\crud\\CrudServiceProvider"
-            ],
-            "aliases": {
-                "Crud": "devjaskirat\\crud\\CrudServiceProvider" 
-            }
+                "briza\\manager\\ManagerServiceProvider"
+            ]
         }
     } 
 }

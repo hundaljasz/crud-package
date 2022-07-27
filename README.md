@@ -13,7 +13,7 @@ The recommended way to install CRUD Package is through
 [Composer](https://getcomposer.org/).
 
 ```bash
-composer require devjaskirat/crud
+composer require briza/manager
 ```
 
 ## Steps
@@ -21,20 +21,11 @@ composer require devjaskirat/crud
 Import in config/app.php under providers 
 ```php 
     'providers' => [
-        devjaskirat\crud\CrudServiceProvider::class
+        briza\manager\ManagerServiceProvider::class
         ];
 ``` 
 
-or if you wish to make alias 
-
-```php 
-'aliases' => [
-    'CRUD' => devjaskirat\crud\CrudServiceProvider::class
-    ];
-```  
-in config/app.php under aliases.
-
-after importing provider or alias you are ready to go.
+after importing provider you are ready to go.
 
 run migration command to create images table in your DB to upload images 
 ```bash
@@ -50,16 +41,10 @@ after running migration command run below command to create storage link in publ
 ```
 ## Example
 
-After importing you can import the provider or alias in your controller.
+After importing you can import the provider in your controller.
 
 ```php
-    use devjaskirat\crud\Http\Controllers\CrudService
-```
-
-or 
-
-```php
-    use CRUD;
+    use briza\manager\Http\Controllers\CrudService
 ```
 
 Create the object

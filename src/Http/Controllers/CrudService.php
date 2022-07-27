@@ -1,11 +1,11 @@
 <?php
 
-namespace devjaskirat\crud\Http\Controllers;
+namespace briza\manager\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use devjaskirat\crud\repository\CrudRepo;
-use devjaskirat\crud\Models\image;
+use briza\manager\repository\CrudRepo;
+use briza\manager\Models\image;
 use Illuminate\Support\Facades\Storage;
 use Exception;
 use Illuminate\Database\QueryException;

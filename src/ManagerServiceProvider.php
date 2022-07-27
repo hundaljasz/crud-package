@@ -1,11 +1,11 @@
 <?php
 
-namespace devjaskirat\crud;
+namespace briza\manager;
 
 use Illuminate\Support\ServiceProvider;
-use devjaskirat\crud\Generators\CrudCommand;
+use briza\manager\Generators\CrudCommand;
 
-class CrudServiceProvider extends ServiceProvider
+class ManagerServiceProvider extends ServiceProvider
 {
     /**
      * Register services.
