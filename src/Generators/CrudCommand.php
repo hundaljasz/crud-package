@@ -13,8 +13,8 @@ class CrudCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'make:crud 
-                            {name : name of the crud service} 
+    protected $signature = 'make:crud
+                            {name : name of the crud service}
                             {--model= : name of the model to be use with the service}';
 
     /**
@@ -50,7 +50,7 @@ class CrudCommand extends Command
 
         $this->makeDirectory(dirname($path));
         $contents = $this->getSourceFile();
-    
+
         if (!$this->files->exists($path)) {
             $this->files->put($path, $contents);
             $this->info("File : {$path} created");
@@ -93,7 +93,7 @@ class CrudCommand extends Command
             'CLASS_NAME'        => $this->getSingularClassName($this->argument('name')),
             'MODEL'             => $this->option('model') ?? 'User'
         ];
-        
+
     }
 
     /**
@@ -131,7 +131,7 @@ class CrudCommand extends Command
      */
     public function getSourceFilePath()
     {
-        return base_path('App\\Crud') .'\\' .$this->getSingularClassName($this->argument('name')) . 'Crud.php';
+        return base_path('App'.DIRECTORY_SEPARATOR.'Crud') .DIRECTORY_SEPARATOR.$this->getSingularClassName($this->argument('name')) . 'Crud.php';
     }
 
     /**

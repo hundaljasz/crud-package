@@ -2,18 +2,34 @@
 
 namespace $NAMESPACE$;
 
-use briza\manager\repository\CrudRepo;
+use briza\manager\managerService\DBManagerService;
 use App\Models\$MODEL$;
-use Illuminate\Http\Request;
 
-class $CLASS_NAME$ extends CrudRepo
+class $CLASS_NAME$Crud extends DBManagerService
 {
+    /**
+     * define your model in $model variable.
+    */
+    protected static $model          = '$MODEL$';
+
+    /**
+     * define image field available in your request in $imageField
+     * to upload images.
+    */
+    protected static $imageDirectory = NULL;
+
+    /**
+     * define image field available in your request in $imageField
+     * to upload images.
+    */
+    protected static $imagePrefix    = NULL;
+
     /**
      * Validate your request here.
      *
      * @return int
      */
-    public function validate(Request $request) {
+    public function validate() {
 
     }
 }

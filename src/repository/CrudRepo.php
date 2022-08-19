@@ -83,14 +83,10 @@ class CrudRepo {
         }
     }
 
-    public function delete($id,$model,$newIdField)
+    public function delete($id,$model)
     {
         try {
-            if($newIdField != null) {
-                $model::where($newIdField,$id)->delete();
-            } else {
-                $model::find($id)->delete();
-            }
+            $model::find($id)->delete();
             return [
                 'status' => true,
                 'type' => 'success',
