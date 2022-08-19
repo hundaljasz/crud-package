@@ -137,7 +137,7 @@ class CrudCommand extends Command
     /**
      * Build the directory for the class if necessary.
      *
-     * @param  string  $path
+     * @param  string  $path 
      * @return string
      */
     protected function makeDirectory($path)
