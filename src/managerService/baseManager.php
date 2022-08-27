@@ -20,8 +20,7 @@ class baseManager {
         ];
     }
 
-    public static function insert($request, $model=null, $imageDirectory = null,$imagePrefix = null)
-    {
+    public static function insert($request, $model=null, $imageDirectory = null,$imagePrefix = null) {
         if($model != null) {
             $newRequest = $request->all();
             $repoObject = new CrudRepo();
