@@ -30,6 +30,6 @@ class $CLASS_NAME$Crud extends DBManagerService
      * @return int
      */
     public function validate() {
-
+        return [];
     }
 }

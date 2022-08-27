@@ -15,6 +15,7 @@ class CrudRepo {
                     'status' => true,
                     'type' => 'success',
                     'id' => $insert->id,
+                    'data' => $insert,
                     'message' => 'data saved successfully.'
                 ];
             } else {
@@ -49,6 +50,7 @@ class CrudRepo {
                     'status' => true,
                     'type' => 'success',
                     'id' => $id,
+                    'data' => $data,
                     'message' => 'data updated successfully.'
                 ];
             } else {
