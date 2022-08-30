@@ -36,9 +36,10 @@ abstract class DBManagerService extends baseManager
             if($request->ajax()) {
                 return static::errorReturn($validator->errors());
             } else {
-                return back()
-                ->withErrors($validator)
-                ->withInput();
+                return static::errorReturn($validator->errors());
+                // return back()
+                // ->withErrors($validator)
+                // ->withInput();
             }
         }
         return static::insert($request, static::$model,static::$imageDirectory,static::$imagePrefix);
