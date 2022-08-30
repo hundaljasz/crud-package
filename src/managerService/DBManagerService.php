@@ -78,7 +78,7 @@ abstract class DBManagerService extends baseManager
             $validator = Validator::make($request->all(), $rules);
             if ($validator->fails()) {
                 if($request->ajax()) {
-                    return response($validator->errors(),500);
+                    return static::errorReturn($validator->errors());
                 } else {
                     return back()
                     ->withErrors($validator)
